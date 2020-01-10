@@ -16,8 +16,8 @@
       }
     ]"
   >
-    <i class="el-icon-loading" v-if="loading"></i>
-    <i :class="icon" v-if="icon && !loading"></i>
+    <ii class="el-icon-loading" v-if="loading"></ii>
+    <ii :class="icon" v-if="icon && !loading"></ii>
     <span v-if="$slots.default"><slot></slot></span>
   </cbutton>
 </template>
