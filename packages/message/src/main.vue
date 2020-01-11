@@ -13,13 +13,13 @@
       @mouseenter="clearTimer"
       @mouseleave="startTimer"
       role="alert">
-      <i :class="iconClass" v-if="iconClass"></i>
-      <i :class="typeClass" v-else></i>
+      <span :class="iconClass" v-if="iconClass"></span>
+      <span :class="typeClass" v-else></span>
       <slot>
         <p v-if="!dangerouslyUseHTMLString" class="el-message__content">{{ message }}</p>
         <p v-else v-html="message" class="el-message__content"></p>
       </slot>
-      <i v-if="showClose" class="el-message__closeBtn el-icon-close" @click="close"></i>
+      <span v-if="showClose" class="el-message__closeBtn el-icon-close" @click="close"></span>
     </div>
   </transition>
 </template>

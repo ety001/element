@@ -9,11 +9,11 @@
       @click="click"
       role="alert"
     >
-      <i
+      <span
         class="el-notification__icon"
         :class="[ typeClass, iconClass ]"
         v-if="type || iconClass">
-      </i>
+      </span>
       <div class="el-notification__group" :class="{ 'is-with-icon': typeClass || iconClass }">
         <div class="el-notification__title" v-text="title"></div>
         <div class="el-notification__content" v-show="message">

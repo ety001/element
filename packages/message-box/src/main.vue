@@ -17,15 +17,14 @@
             </div>
             <span>{{ title }}</span>
           </div>
-          <button
-            type="button"
+          <div
             class="el-message-box__headerbtn"
             aria-label="Close"
             v-if="showClose"
             @click="handleAction(distinguishCancelAndClose ? 'close' : 'cancel')"
             @keydown.enter="handleAction(distinguishCancelAndClose ? 'close' : 'cancel')">
-            <i class="el-message-box__close el-icon-close"></i>
-          </button>
+            <span class="el-message-box__close el-icon-close"></span>
+          </div>
         </div>
         <div class="el-message-box__content">
           <div class="el-message-box__container">
