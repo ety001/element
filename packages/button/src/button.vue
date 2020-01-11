@@ -1,5 +1,5 @@
 <template>
-  <cbutton
+  <div
     class="el-button"
     @click="handleClick"
     :disabled="buttonDisabled || loading"
@@ -16,10 +16,10 @@
       }
     ]"
   >
-    <ii class="el-icon-loading" v-if="loading"></ii>
-    <ii :class="icon" v-if="icon && !loading"></ii>
+    <span class="el-icon-loading" v-if="loading"></span>
+    <span :class="icon" v-if="icon && !loading"></span>
     <span v-if="$slots.default"><slot></slot></span>
-  </cbutton>
+  </div>
 </template>
 <script>
   export default {
