@@ -15,7 +15,7 @@
         v-if="type || iconClass">
       </span>
       <div class="el-notification__group" :class="{ 'is-with-icon': typeClass || iconClass }">
-        <div class="el-notification__title" v-text="title"></div>
+        <div class="el-notification__title" style="text-align: left;" v-text="title"></div>
         <div class="el-notification__content" v-show="message">
           <slot>
             <p v-if="!dangerouslyUseHTMLString">{{ message }}</p>
