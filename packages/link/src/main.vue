@@ -11,7 +11,7 @@
     @click="handleClick"
   >
 
-    <i :class="icon" v-if="icon"></i>
+    <span :class="icon" v-if="icon"></span>
 
     <span v-if="$slots.default" class="el-link--inner">
       <slot></slot>
